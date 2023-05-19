@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meu Albúm de Família</h1>
+    <img src="https://thumbs.dreamstime.com/b/desenho-simples-da-fam%C3%ADlia-com-pais-e-crian%C3%A7a-60567966.jpg" style="width: 30%; ime-mode: familyMemberImage;">
+    <h4 id="familyMemberImage">Minha Familia</h4>
+    <br>                                                                                    
+    <button onclick="update">Próximo</button>
+</body>
+<script>
+    var images =["https://thumbs.dreamstime.com/b/desenho-simples-da-fam%C3%ADlia-com-pais-e-crian%C3%A7a-60567966.jpg" style="width: 30%; ime-mode: familyMemberImage","https://tse4.mm.bing.net/th?id=OIP.a3UJ868aGpmZWjntOHZUFAHaKo&pid=Api&P=0&h=180","https://tse3.mm.bing.net/th?id=OIP.8kvIdTCYQUe_DgkXphz8oQHaHa&pid=Api&P=0&h=180"]
+    var names = ["Jacqueline e Massuello","Minha Família","Gabriel"]
+    var i=0
+    function update() {
+       i++
+       var fnA = 5
+       if(i > fnA){
+        i=0
+       }
+       var updateImage =images[i];
+       var updateName[i];
+       document.getElementById("familyMemberImage").src = updatedimage;
+       document.getElementById("familyMemberImage").innerHTML = updateName
+    }
+</script>
+</html>
